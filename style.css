@@ -1,0 +1,50 @@
+.navbar-custom {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: black;
+    padding: 15px 15px;
+    display: inline-block;
+}
+
+.navbar-custom .text-color,
+.navbar-custom .image-color,
+.navbar-custom .video-color,
+.navbar-custom .table-color{
+    text-decoration: none; /*remove hyperlink*/
+    color: white;
+    font-size: 18px;
+    padding: 15px; /*spaces*/
+}
+
+input[type=submit] {
+    background:grey;
+    border-radius: 5px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;/*collapsed into a single border*/
+}
+
+td {
+    font-weight: normal;
+}
+
+th{
+    text-align:left;
+}
+
+.column {
+    display:flex;
+    justify-content:space-between;
+}
+
+.column img{
+    width:250px;
+    height:250px;
+    padding:10px;
+}
+
+.column video {
+    display:inline;
+}
