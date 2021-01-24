@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "en">
     <head>
         <link rel = "stylesheet" href = "style.css">
+        <meta charset="utf-8">
      
-
     </head>
 
     <body>
         <nav class = "navbar navbar-custom">
-            <a class = "text-color" href = "index.html"> Text </a>
-            <a class = "image-color" href = "image.html"> Image </a>
-            <a class = "video-color" href = "video.html"> Video </a>
-            <a class = "table-color" href = "table.html"> Table </a>
+            <a href = "index.html"> Text </a>
+            <a class = "current" href = "image.html"> Image </a>
+            <a href = "video.html"> Video </a>
+            <a href = "table.html"> Table </a>
+            <a href = "email.html"> Email </a>
         </nav>
-
+   
+        <!-- trigger the modal -->
        
-        <div class="column">
-            <img src="IMG_1.jpg" alt="image1" >
-            <img src="IMG_2.jpg" alt="image2" >
-            <img src="IMG_3.jpg" alt="image3" >
+        <img class="myImages", id="myImg" src="IMG_1.jpg" alt="image1" >
+        <img class="myImages", id="myImg" src="IMG_2.jpg" alt="image2" >
+        <img class="myImages", id="myImg" src="IMG_3.jpg" alt="image3" >
+        <img class="myImages", id="myImg" src="IMG_4.jpg" alt="image4" >
+
+        <img class="myImages", id="myImg" src="IMG_5.jpg" alt="image5" >
+        <img class="myImages", id="myImg" src="IMG_6.jpg" alt="image6" >
+        <img class="myImages", id="myImg" src="IMG_7.jpg" alt="image7" >
+        <img class="myImages", id="myImg" src="IMG_8.jpg" alt="image8" >
+
+        <img class="myImages", id="myImg" src="IMG_9.jpg" alt="image9" >
+        <img class="myImages", id="myImg" src="IMG_10.jpg" alt="image10" >
+        <img class="myImages", id="myImg" src="IMG_11.jpg" alt="image11" >
+        <img class="myImages", id="myImg" src="IMG_12.jpg" alt="image12" >
+
+        <img class="myImages", id="myImg" src="IMG_13.jpg" alt="image13" >
+        <img class="myImages", id="myImg" src="IMG_14.jpg" alt="image14" >
+      
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id = "img01">
+
         </div>
 
-        <div class="column">
-            <img src="IMG_4.jpg" alt="image4" >
-            <img src="IMG_5.jpg" alt="image5" >
-            <img src="IMG_6.jpg" alt="image6" >
-        </div>
-
-
-       
-    
+        <script src="modscript.js"> </script>
+     
 
     </body>
 

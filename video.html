@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "en">
     <head>
         <link rel = "stylesheet" href = "style.css">
-     
+        <meta charset="utf-8">
 
     </head>
 
     <body>
         <nav class = "navbar navbar-custom">
-            <a class = "text-color" href = "index.html"> Text </a>
-            <a class = "image-color" href = "image.html"> Image </a>
-            <a class = "video-color" href = "video.html"> Video </a>
-            <a class = "table-color" href = "table.html"> Table </a>    
+            <a href = "index.html"> Text </a>
+            <a href = "image.html"> Image </a>
+            <a class = "current" href = "video.html"> Video </a>
+            <a href = "table.html"> Table </a> 
+            <a href = "email.html"> Email </a>
         </nav> 
 
-        <div class="column">
-            <video width="300" height="230" controls>
-                <source src="IMG_7.MOV" type="video/mp4">
-            </video>
+     
+        <video class="myImages" id="myImg" controls >
+            <source src="IMG_7.MOV" type="video/mp4">
+        </video>
 
-            <video width="300" height="230" controls>
-                <source src="IMG_8.MOV" type="video/mp4">
-            </video>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
 
-            <video width="300" height="230" controls>
-                <source src="IMG_9.MOV" type="video/mp4">
-            </video>
+            <!-- Modal Content -->
+            <img class="modal-content" id = "img01">
         </div>
-
-       
     
+    
+
+         <script src="modscript_v.js"> </script>
+     
         
     </body>
 
