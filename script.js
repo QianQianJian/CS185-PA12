@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded",
             document
                 .getElementById("content")
             
-            if (email === "qianqian@ucsb.edu"){
+            if (email.indexOf('.com')>-1 && email.indexOf('@') > -1){
+                document.getElementById("content").innerHTML = "<h2> Email successfully recorded </h2>";
+            } else if (email.indexOf('.edu')>-1 && email.indexOf('@') > -1){
                 document.getElementById("content").innerHTML = "<h2> Email successfully recorded </h2>";
             } else {
                 document.getElementById("content").innerHTML = "<h2> Invalid email address </h2>";

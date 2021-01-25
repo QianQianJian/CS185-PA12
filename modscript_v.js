@@ -1,23 +1,23 @@
+// For video display
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get all images
-var images = document.getElementsByClassName("myImages");
+// Get all videos
+var videos = document.getElementsByClassName("myVideos");
 
-// The specific image in the model
-var modalImg = document.getElementById("img01");
+// The specific video in the model
+var modalVid = document.getElementById("vid01");
 
-// Go thru all images 
-for (var i = 0; i < images.length; i++) {
-    var img = images[i];
-    // and attach our click listener for this image.
-    img.onclick = function(evt) {
+// Go thru all videos 
+for (var i = 0; i < videos.length; i++) {
+    var vid = videos[i];
+    vid.onclick = function(evt) {
         modal.style.display = "block";
-        modalImg.src = this.src;
+        modalVid.src = this.src;
     }
 }
   
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("modal")[0];
 
@@ -27,8 +27,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-// prevent click from palying the video automatically
-document.querySelector("modal").addEventListener("click", function(event) {
-    event.preventDefault();
-}, false);

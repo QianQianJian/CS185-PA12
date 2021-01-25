@@ -42,9 +42,8 @@
             <span class="close">&times;</span>
 
             <!-- Modal Content (The Video) -->
-            <iframe class="modal-content" id = "vid01" height="200" width="300"  src="IMG_7.MOV" type="video/mp4">
-            </iframe>
-            
+            <img class="modal-content" id = "vid01">
+
         </div>
 
         <script src="modscript_v.js"> </script> 
