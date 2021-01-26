@@ -29,7 +29,7 @@ input[type=submit] {
 }
 
 table, th, td{
-    border: 1px solid black;
+    border: 1.5px solid black;
     border-collapse: collapse;/*collapsed into a single border*/
 }
 
@@ -47,6 +47,7 @@ img{
     justify-content: center;
     align-items: center;
     padding: 10px; /*spaces*/
+    border: 5px solid gray;
 }
 
 video {
@@ -54,7 +55,8 @@ video {
     height: 320px;
     justify-content: center;
     align-items: center;
-    padding: 15px; /*spaces*/
+    padding: 5px; /*spaces*/
+    border: 5px solid gray;
 }
 
 /* The Modal (background) */
@@ -73,7 +75,7 @@ video {
   }
   
   /* Modal Content (Image/Video) */
-  .modal-content {
+  .modal-content{
     margin: auto;
     display: block;
     width: 500px;
@@ -81,7 +83,7 @@ video {
     animation-name: zoom;
     animation-duration: 0.6s;
   }
-  
+
   @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
@@ -103,7 +105,7 @@ video {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: gray; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -112,6 +114,6 @@ video {
   }
   
   #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: pink; /* Add a dark-grey background on hover */
   }
 

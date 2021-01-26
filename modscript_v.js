@@ -10,11 +10,11 @@ var videos = document.getElementsByClassName("myVideos");
 var modalVid = document.getElementById("vid01");
 
 // Go thru all videos 
-for (var i = 0; i < videos.length; i++) {
-    var vid = videos[i];
-    vid.onclick = function(evt) {
+for (let i = 0; i < videos.length; i++) {
+    videos[i].onclick = function() {
         modal.style.display = "block";
-        modalVid.src = this.src;
+        modalVid.src = videos[i].getElementsByTagName('source')[0].src;
+        modalVid.play();    
     }
 }
   
@@ -24,6 +24,9 @@ var span = document.getElementsByClassName("modal")[0];
 // When the user clicks on <span> (x), close the modal
 window.onclick = function(event) { 
     if(event.target == modal){
+        event.preventDefault();
+        event.stopImmediatePropagation();
         modal.style.display = "none";
     }
 }
+

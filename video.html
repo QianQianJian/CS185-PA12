@@ -14,24 +14,27 @@
             <a href = "table.html"> Table </a> 
             <a href = "email.html"> Email </a>
         </nav> 
+
+        <h1> Videos </h1>
+        <h2> Click to play in an overlay window! </h2>
      
-        <video class="myVideos", id="myVid" controls >
-            <source src="IMG_7.MOV" type="video/mp4">
+        <video class="myVideos", controls, onplay=this.pause()>
+                <source src="IMG_7.MOV" type="video/mp4">
         </video>
 
-        <video class="myVideos", id="myVid" controls >
+        <video class="myVideos", controls, onplay=this.pause()>
             <source src="IMG_8.MOV" type="video/mp4">
         </video>
 
-        <video class="myVideos", id="myVid" controls >
+        <video class="myVideos", controls, onplay=this.pause() >
             <source src="IMG_9.MOV" type="video/mp4">
         </video>
 
-        <video class="myVideos", id="myVid" controls >
+        <video class="myVideos", controls, onplay=this.pause() >
             <source src="IMG_14.MOV" type="video/mp4">
         </video>
 
-        <video class="myVideos", id="myVid" controls >
+        <video class="myVideos", controls, onplay=this.pause() >
             <source src="IMG_15.MOV" type="video/mp4">
         </video>
             
@@ -42,8 +45,9 @@
             <span class="close">&times;</span>
 
             <!-- Modal Content (The Video) -->
-            <iframe class="modal-content" id = "vid01" height="200" width="300"  src="IMG_7.MOV" type="video/mp4">
-            </iframe>
+            <video class="modal-content" id = "vid01">
+                <source src="" type="video/mp4">
+            </video>
             
         </div>
 
