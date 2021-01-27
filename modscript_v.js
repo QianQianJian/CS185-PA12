@@ -24,9 +24,8 @@ var span = document.getElementsByClassName("modal")[0];
 // When the user clicks on <span> (x), close the modal
 window.onclick = function(event) { 
     if(event.target == modal){
-        event.preventDefault();
-        event.stopImmediatePropagation();
         modal.style.display = "none";
+        modalVid.pause(); 
     }
 }
 

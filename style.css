@@ -41,13 +41,22 @@ th{
     text-align:left;
 }
 
+/* change with window size*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap:2rem;
+}
+
+.child { 
+  overflow: hidden;
+}
+
 img{
     width: 250px;
     height: 250px;
     justify-content: center;
     align-items: center;
-    padding: 10px; /*spaces*/
-    border: 5px solid gray;
 }
 
 video {
@@ -55,8 +64,6 @@ video {
     height: 320px;
     justify-content: center;
     align-items: center;
-    padding: 5px; /*spaces*/
-    border: 5px solid gray;
 }
 
 /* The Modal (background) */
